@@ -1,10 +1,16 @@
 import React from 'react';
-import { ContactItem } from './Contact.styled';
+import { ContactItem, TextItem } from './Contact.styled';
+import { Button } from 'components/ContactForm/ContactForm.styled';
 
-const Contact = ({ name, number }) => {
+const Contact = ({ name, number, handleDelete, id }) => {
   return (
     <ContactItem>
-      {name}: {number}
+      <TextItem>
+        {name}: {number}
+      </TextItem>
+      <Button type="button" onClick={() => handleDelete(id)}>
+        Delete
+      </Button>
     </ContactItem>
   );
 };

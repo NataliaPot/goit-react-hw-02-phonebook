@@ -48,13 +48,14 @@ export const Input = styled.input`
 `;
 
 export const Button = styled.button`
-  display: block;
   padding: 2px 8px;
   max-width: 120px;
   background-color: #fff;
   border: 1px solid #b4b4b4;
   border-radius: 4px;
   box-shadow: 0.1px 1.1px 1.5px rgb(150, 150, 150);
+  cursor: pointer;
+
   &:hover {
     border: 1px solid #009eba;
     color: rgb(0, 158, 186);
